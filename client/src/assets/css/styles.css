@@ -1,0 +1,468 @@
+/*IMNPORTAR FUENTES CUSTOM*/
+@font-face{
+    font-family: "yanone";
+    src: url("fonts/yanone.ttf");
+}
+
+@font-face{
+    font-family: "finger";
+    src: url("fonts/finger.ttf");
+}
+
+
+/*ESTILOS GENERALES*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "yanone", "Arial", "Helvetica";
+    background: url('../img/pattern.png');
+    font-size: 20px;
+    background-attachment: fixed;   
+}
+
+.clearfix {
+    float: none;
+    clear: both;
+}
+
+/*BARRA DE NAVEGACIÓN / HEADER*/
+
+header{
+    display: block;
+    width: 100%;
+    height: 90px;
+    background: rgba(53, 103, 164, 0.8);
+    position: fixed;
+    text-transform: uppercase;
+}
+
+header ul{
+    display: block;
+    /*width: 40%;*/
+    width: 535px;
+    height: inherit;
+    margin: 0px auto;
+    margin-top: -3px;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 88px;
+}
+
+header ul li a{
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    height: inherit;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms;
+}
+
+header a.text:hover,
+.actived{
+    background: rgba(0,0,0,0.8);
+}
+
+@media (min-width: 641px) {
+    img.icon {display:none}
+    a.text {display:inline-block}
+}
+
+@media (max-width: 640px) {
+    img.icon{
+        display:inline-block;
+        padding-right: 30px;
+        padding-top: 18px;
+        text-decoration: none;
+        transition: all 300ms;
+        width: 60px;
+    }
+
+    img.icon:hover{
+        opacity: 0.8;
+    }
+    
+    
+    a.text {display:none}
+    
+    .project .image {
+        height: 65px !important;
+    }
+}
+
+
+/*LOGOTIPO*/
+
+#logo{
+    font-family: "finger";
+    font-size: 30px;
+}
+
+#logo a {
+    transition: color 500ms, transform 500ms;
+}
+
+#logo a:hover{
+    background: transparent;
+    color: black;
+    transform: scale(1.50, 1.50);
+}
+
+
+/*CONTENEDOR PRINCIPAL*/
+
+#content {
+    min-height: 600px;
+    height: auto;
+    width: 75%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 40px black;
+    border-left: 1px solid #b7b7b7;
+    border-right: 1px solid #b7b7b7;
+    background: rgba(255, 255, 255, 0.7);
+    /*Separar contenido del header*/
+    padding-top: 120px;
+}
+
+/*PIE DE PAGINA*/
+
+footer {
+    width: 203px;
+    margin: 0px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*rgba(rojo, verde, azul, opacidad)*/
+    color: rgba(0,0,0,0.5);
+}
+
+
+/*SOBRE MI*/
+#title{
+    width: 70%;
+    text-align: center;
+    margin: 0px auto;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+#title h1{
+    font-family: "finger";
+    font-size: 60px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    /*NEW*/
+    margin: 0px -20px;
+}
+
+
+
+#title h2{
+    font-size: 25px;
+    color: gray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+        
+}
+
+article.about{
+    width: 70%;
+    margin: 0px auto;
+    margin-bottom: 20px;
+    font-size: 23px;
+}
+
+.about h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+}
+
+.about p{
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: justify;
+}
+
+/*SECCION CON FORMULARIO*/
+
+.container{
+    padding: 50px;
+    padding-top: 10px; 
+    overflow: auto;
+}
+
+.grid-container{
+    display: grid;
+    text-align: center;
+    grid-template-columns: auto auto auto;
+}
+
+.image-container{
+    /*display: inline-grid;*/
+}
+
+.container .image{
+    float: left;
+    width: 47%;
+}
+
+.container .image img{
+    width: 100%;
+}
+
+.container .data{
+    float: left;
+    width: 48%;
+    margin-left: 30px; 
+}
+
+.container h2{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+form{
+    width: 80%;
+}
+
+form label{
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea{
+    width: 40%;
+    padding: 5px;
+}
+
+form button,
+form input[type="submit"],
+.button-edit, 
+.button-delete,
+#boton_chat{
+    font-size: 17px;
+    padding: 10px;
+    display: block;
+    margin-top: 15px;
+    color: white;
+    background: rgba(53, 103, 164, 1);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+
+.button-edit, 
+.button-delete{
+    width: 30%;
+    text-align: center;
+    float: left;
+    margin-right: 10px;
+    text-decoration: none;
+    border: none;
+}
+
+.button-edit{
+    background: orange;
+}
+
+.button-delete{
+    background: red;
+}
+
+form button:hover,
+form input[type="submit"]:hover,
+#boton_chat:hover{
+    background: rgba(53, 103, 164, 0.8);
+    border: 1px solid rgba(13, 67, 133, 1);
+    cursor: pointer;
+}
+
+form input[disabled]{
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.form_error{
+    font-size: 13px;
+    padding: 3px;
+    background: red;
+    color: white;
+    margin-left: 5px;
+}
+
+.message{
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 50%;
+}
+
+.success{
+    background: green;
+    color: white;
+}
+
+.message a{
+    color: white;
+    
+}
+
+.failed{
+    background: red;
+    color: white;
+}
+
+
+/*PAGINA DE PROYECTOS*/
+
+.project{
+    /*list-style: none;
+    display: block;*/
+    float: left;
+    width: 30%;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.project .image{
+    width: 100%;
+    height: 182px;
+    overflow: hidden;
+}
+
+.project img{
+    width: 100%;
+    
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+}
+
+.confirm{
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#messages{
+    margin-top:10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 350px;
+    overflow-y: scroll;
+    border: 1px solid #eee;
+    background-color: #e0e0e0;
+    box-shadow: 0px 0px 20px #ccc #inset;
+}
+        
+.message{
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+#chat{
+    display: none;
+}
+
+.hora{
+    font-size: 14px;
+    font-style: italic;
+    color: grey;
+    text-align: right;
+    display: inline-block;
+    float: right;
+    margin-right: 5px;
+}
+
+.hora span{
+    position:relative;
+}
+
+#boton_chat{
+    margin-left: 15px;
+}
+
+#inicio_chat{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 10%;
+}
+
+.apodo{
+    padding: 10px;
+    margin-top: 14px;
+}
+
+.textochat{
+    width: 100%;
+    display: inline-block;
+    height: 35px;
+    margin-top: 10px;
+}
+
+.enviarchat{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#contactForm{
+    display: flex;
+}
+
+.connection{
+    margin-left: 5px;
+    font-style: italic;
+    color: dimgrey;
+    font-size: 17px;
+    font-family: "yanone", "Arial", "Helvetica";
+    padding-bottom: 5px;
+}
+
+#desconectar_chat{
+    background: rgba(230, 25, 25, 0.8);
+    font-size: 17px;
+    padding: 10px;
+    display: block;
+    margin-top: 15px;
+    color: white;
+    border: 1px solid rgb(142, 1, 1);
+    cursor: pointer;
+    margin-top: 377px;
+    margin-right: 50px;
+    float: right;
+}
+#desconectar_chat:hover{
+    background: rgba(212, 0, 0, 0.8);
+    border: 1px solid rgb(45, 3, 3);
+    cursor: pointer;
+}
+.people_connected{
+    background: url(../img/user-icon.png) no-repeat;
+    background-size: 20px;
+    position: absolute;
+    width: 34px;
+    margin-top: 24%;
+    text-align: right;
+    margin-left: 49%;
+}

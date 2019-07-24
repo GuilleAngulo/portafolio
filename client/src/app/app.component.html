@@ -1,0 +1,37 @@
+<header>
+    <ul>
+        <li>
+            <a class="text" [routerLink]="['/sobre-mi']" [routerLinkActive]="['actived']">Sobre mi</a>
+            <a [routerLink]="['/sobre-mi']">
+                <img class="icon" src="../assets/img/about-me-icon.png" />
+            </a>
+        </li>
+        <li>
+            <a class="text" [routerLink]="['/proyectos']" [routerLinkActive]="['actived']">Proyectos</a>
+            <a [routerLink]="['/proyectos']">
+                <img class="icon" src="../assets/img/projects.png" />
+            </a>
+        </li>
+        <li id="logo"><a href="#" class="text">GA</a></li>
+        <li>
+            <a class="text" [routerLink]="['/crear-proyecto']" [routerLinkActive]="['actived']">Crear Proyecto</a>
+            <a [routerLink]="['/crear-proyecto']">
+                <img class="icon" src="../assets/img/new-project.png" />
+            </a>
+        </li>
+        <li>
+            <a class="text" [routerLink]="['/contacto']" [routerLinkActive]="['actived-icon']">Contacto</a>
+            <a [routerLink]="['/contacto']">
+                <img class="icon" src="../assets/img/contact.png" />
+            </a>
+        </li>
+    </ul>
+</header>
+
+<section id="content">
+    <router-outlet></router-outlet>
+</section>
+
+<footer>
+    Portafolio de Guillermo Angulo &copy;
+</footer>

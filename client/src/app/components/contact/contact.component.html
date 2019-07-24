@@ -1,0 +1,35 @@
+<div class="container"> 
+    <h2>Contacto</h2>
+    
+    <div class="message success" *ngIf="status == 'success' ">
+        El mensaje se ha enviado correctamente.
+    </div>
+    
+     <div class="message failed" *ngIf="status == 'failed' ">
+        El mensaje no se ha enviado.
+    </div>
+    
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(this)">
+        <p>
+            <label for="name">Nombre</label>
+            <input type="text" [disabled]="loading" [(ngModel)]="contact.Name" name="contact.Name" required="" class="form-control text-input" id="name" placeholder="Nombre" />
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" [disabled]="loading" [(ngModel)]="contact.Email" name="contact.Email" required="" class="form-control text-input" id="email" placeholder="E-mail" />
+        </p>
+        <p>
+            <label for="subject">Asunto</label>
+			<input type="text" [disabled]="loading" [(ngModel)]="contact.Subject" name="contact.Subject" required="" class="form-control text-input" id="subject" placeholder="Asunto" />
+        </p>
+        <p>
+            <label for="message">Mensaje</label>
+            <textarea type="text" [disabled]="loading" [(ngModel)]="contact.Message" name="contact.Message" required="" class="form-control" id="message" placeholder="Mensaje..."></textarea>
+        </p>
+        
+        <input type="submit" value="Enviar" [disabled]="loading"/>
+    
+    </form>
+
+
+</div>
