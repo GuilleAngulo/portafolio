@@ -33,8 +33,10 @@ npm install nodemailer --save
 
 ### Installing
 
+It is necessary to fill the file in '/server/util/global.js' with your email data. Also it´s necessary to allow to Gmail Account access from Low Secure Apps. Otherwise the configuration for another email account can be edited at '/server/controllers/contact.js', in "transporter" variable (See https://nodemailer.com/about/).
 
-Start running the API server
+
+Start running the API server 
 
 ```
 cd /server/
