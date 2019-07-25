@@ -45,7 +45,6 @@ export class CreateComponent implements OnInit {
                   this.save_project = result.project;
                   this.status = 'success';
                   form.reset();
-                  console.log(result);
               });
               }else{
                   this.save_project = response.project;

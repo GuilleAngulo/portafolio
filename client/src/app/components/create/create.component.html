@@ -10,7 +10,7 @@
         El proyecto no se ha podido crear
     </div>
     
-    <form #projectForm="ngForm" (ngSubmit)="onSubmit(this)">
+    <form #projectForm="ngForm" (ngSubmit)="onSubmit(projectForm)">
         <p>
             <label for="name">Nombre</label>
             <input type="text" name="name" #name="ngModel" [(ngModel)]="project.name" required />
@@ -45,8 +45,8 @@
         </p>
         <p>
             <label for="image">Imagen del proyecto</label>
-             <span class="image" *ngIf="project.image" style="float:none">
-                <img src="{{url + 'get-image/' + project.image}}" style="width:100px"/>
+             <span class="image" style="float:none">
+                <img src="{{url + 'get-image/' + project.image}}" style="width:100px" *ngIf="project.image"/>
             </span><br/>
             <input type="file" name="image" placeholder="Subir imagen"  (change)="fileChangeEvent($event)"/>
         </p>

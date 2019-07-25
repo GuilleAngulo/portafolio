@@ -1,0 +1,20 @@
+.message{
+    padding: 5px;
+    border: 1px solid #eee;
+    width: 50%;
+}
+
+.success{
+    background: green;
+    color: white;
+}
+
+.message a{
+    color: white;
+    
+}
+
+.failed{
+    background: red;
+    color: white;
+}

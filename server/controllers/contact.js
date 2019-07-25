@@ -2,7 +2,7 @@
 
 var nodemailer = require('nodemailer');
 var Contact = require("../models/contact");
-var Global = require("../global");
+const global = require("../util/global");
 
 var controller = {
   sendEmail: function(req, res){
@@ -19,16 +19,16 @@ var controller = {
         var transporter = nodemailer.createTransport({
           service: 'gmail',
           auth: {
-            user: Global.gmail,
-            pass: Global.password
+            user: global.gmail,
+            pass: global.password
           }
         });
         
 
         var mailOptions = {
-          from: contact.getName(),
-          to: Global.gmail,
-          subject: 'Nuevo Mensaje [Portafolio] | ' + contact.getSubject(),
+          from: '"Web Portafolio" <admin@portafolio.com>',
+          to: global.gmail,
+          subject: 'Nuevo Mensaje | ' + contact.getSubject(),
           html: '<p><strong>' + contact.getMessage() + '</strong></p>' +
                 '<p><i>Enviado por: ' + contact.getName() + ' (' + contact.getEmail() + ')</i></p>'
         };

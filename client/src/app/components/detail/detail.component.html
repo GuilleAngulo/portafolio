@@ -1,7 +1,8 @@
 <div class="container" *ngIf="project">
 
-    <div class="image" *ngIf="project.image">
-        <img src="{{url + 'get-image/' + project.image}}"/>
+    <div class="image">
+        <img src="{{url + 'get-image/' + project.image}}" *ngIf="project.image"/>
+        <img src="../../../assets/img/no-image.jpg"  *ngIf="!project.image"/>
     </div>
     <div class="data">
         <h1>{{project.name}}</h1>

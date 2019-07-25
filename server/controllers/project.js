@@ -143,7 +143,7 @@ var controller = {
             var fileExt = extensionSplit[1];
             
             //Controlar que sea una imagen lo que se esta subiendo, mediante el control de la extension del archivo
-            if(fileExt == 'png' || fileExt == 'jpg' || fileExt == 'jpeg' || fileExt == 'gif') {
+            if(fileExt == 'png' || fileExt == 'jpg' || fileExt == 'jpeg' || fileExt == 'gif' || fileExt == 'JPG') {
             
             Project.findByIdAndUpdate(projectId, {image: fileName}, {new:true}, (err, projectUpdated) => {
             

@@ -24,13 +24,10 @@
             ],
             "styles": [
               "src/assets/css/styles.css",
-              "node_modules/bxslider/dist/jquery.bxslider.css",
               "node_modules/ngx-toastr/toastr.css"
             ],
             "scripts": [
                 "node_modules/jquery/dist/jquery.min.js",
-                "node_modules/bxslider/dist/jquery.bxslider.min.js",
-                "node_modules/socket.io-client/dist/socket.io.js"
             ]
           },
           "configurations": {
@@ -88,8 +85,7 @@
               "src/styles.css"
             ],
             "scripts": [
-                "node_modules/jquery/dist/jquery.min.js",
-                "node_modules/socket.io-client/dist/socket.io.js"
+                "node_modules/jquery/dist/jquery.min.js"
             ],
             "assets": [
               "src/favicon.ico",
