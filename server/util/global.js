@@ -2,5 +2,5 @@
 //Rellenar con la cuenta de correo de Gmail y la contraseña
 module.exports = {
     "gmail": '',
-    "password": 'n'
+    "password": ''
 }
