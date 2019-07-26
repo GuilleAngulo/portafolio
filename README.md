@@ -69,3 +69,7 @@ This project is licensed under the MIT License.
 ## Acknowledgments
 
 * This project started as a continuation to an Udemy Course Project (https://www.udemy.com/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10151384?start=180#overview).
+
+## Screens
+
+![alt text](https://github.com/GuilleAngulo/portafolio/blob/master/section-about-me.png)
