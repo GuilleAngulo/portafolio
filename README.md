@@ -73,3 +73,5 @@ This project is licensed under the MIT License.
 ## Screens
 
 ![alt text](https://github.com/GuilleAngulo/portafolio/blob/master/section-about-me.png)
+![alt text](https://github.com/GuilleAngulo/portafolio/blob/master/section-projects.png)
+![alt text](https://github.com/GuilleAngulo/portafolio/blob/master/section-project-detail.png)
