@@ -33,7 +33,7 @@ npm install nodemailer --save
 
 ### Installing
 
-It is necessary to fill both variables at '/server/util/global.js' with your email account and password. Its important to allow to Gmail Account access from Low Secure Apps, otherwise it won´t work. Also you can change the configuration for another email account at '/server/controllers/contact.js', editing "transporter" variable (See https://nodemailer.com/about/).
+It is necessary to fill both variables at '/server/util/global.js' with your email account and password. Its important to allow to Gmail Account access from Low Secure Apps, otherwise it won´t work. Also is possible to change the configuration for another email account at '/server/controllers/contact.js', editing "transporter" variable (See https://nodemailer.com/about/).
 
 
 Start running the API server 
@@ -68,7 +68,7 @@ This project is licensed under the MIT License.
 
 ## Acknowledgments
 
-* This project started as a continuation to an Udemy Course Project (https://www.udemy.com/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10151384?start=180#overview).
+* This project started as a continuation to an [Udemy Course Project](https://www.udemy.com/master-en-javascript-aprender-js-jquery-angular-nodejs-y-mas/learn/lecture/10151384?start=180#overview).
 
 ## Screens
 
