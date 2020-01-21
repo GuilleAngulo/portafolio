@@ -1,4 +1,4 @@
-# Personal Portafolio
+# 📂 Personal Portafolio
 
 This is a MEAN Stack application. The menu is composed by: "Sobre Mi" (About Me), "Proyectos (Projects)", "Crear Proyecto" (Create Project) and "Contacto" (Contact).
 In the "About Me" section there is a personal introduction template. In "Projects" are displayed th projects stored at the MongoDB database, where you can delete or edit its properties. 
