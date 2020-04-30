@@ -21,7 +21,7 @@
     "@angular/router": "~7.1.0",
     "@types/socket.io-client": "^1.4.32",
     "core-js": "^2.5.4",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "ngx-toastr": "^10.0.4",
     "rxjs": "~6.3.3",
     "rxjs-compat": "^6.4.0",
